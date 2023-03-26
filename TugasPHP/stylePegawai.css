@@ -1,0 +1,80 @@
+.konten {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+table tr {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.desain-latar {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #00CD00;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 6px 12px 0px rgba(12, 100, 50, 1);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4EFF00;
+}
+
+button:active {
+    background-color: #7AFFED;
+    transform: translateY(3px);
+}
+
+button.tombol:after {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-image: url("Teknologi.PNG");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
