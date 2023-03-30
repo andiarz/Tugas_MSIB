@@ -43,18 +43,7 @@ class Pegawai{
     }
 
     public function setTunkel(){
-        $tunkel = 0;
-        if($this->status == 'Menikah'){
-            switch($this->jabatan){
-                case 'Manager': $tunkel = 15000000 * 0.1; break;
-                case 'Asisten Manager': $tunkel = 10000000 * 0.1; break;
-                case 'Kepala Bagian': $tunkel = 7000000 * 0.1; break;
-                case 'Staff': $tunkel = 5000000 * 0.1; break;
-                default: $tunkel = 0;
-            }  
-        }else{
-            $tunkel = 0;
-        }
+        $tunkel = ($this->status == 'Menikah')?($this->setGajiPokok() * 0.1): 0;
         return $tunkel;
     }
 
