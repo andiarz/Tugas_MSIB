@@ -88,7 +88,6 @@ $domisili = ["Jakarta","Bandung","Bekasi","Malang","Surabaya", "Semarang","Yogya
 
 </fieldset>
 <?php 
-
 if(isset($_POST['proses'])){
     $nim = $_POST['nim'];
     $nama = $_POST['nama'];
