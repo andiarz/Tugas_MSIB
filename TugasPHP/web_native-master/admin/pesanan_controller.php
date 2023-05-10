@@ -18,6 +18,9 @@ switch($tombol){
     case 'simpan':$model->simpan($data); break;
     case 'ubah':
         $data[] = $_POST['idx']; $model->ubah($data);break;
+    case 'hapus':
+        unset($data);
+        $model->hapus($_POST['idx']);break;
     default:
     header('Location:index.php?url=order');
     break;
