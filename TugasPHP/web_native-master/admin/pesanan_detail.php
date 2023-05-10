@@ -5,8 +5,24 @@ $pesanan = $model->getPesanan($id);
 
 ?>
 
-<div>
-    <h3><?= $pesanan['tanggal'] ?> </h3>
-    <h3><?= $pesanan['total'] ?> </h3>
-    <h3><?= $pesanan['pelanggan_id'] ?> </h3>
+<h1 class="mt-4">Tabel Detail Pesanan</h1>
+<div class="card-body">
+    <div class="card mb-4">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Tanggal Pemesanan</th>
+                                            <th>Total Pesan</th>
+                                            <th>ID Pelanggan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><?= $pesanan['tanggal'] ?> </td>
+                                            <td><?= $pesanan['total'] ?> </td>
+                                            <td><?= $pesanan['pelanggan_id'] ?> </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+</div>
 </div>
