@@ -10,7 +10,7 @@ $data_produk = $model->dataProduk();
 // }
 
 ?>
-                        <h1 class="mt-4">Tables</h1>
+                        <h1 class="mt-4">Table Data Produk</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                             <li class="breadcrumb-item active">Tables</li>
@@ -72,8 +72,8 @@ $data_produk = $model->dataProduk();
                                             <td>
                                                 <form action="produk_controller.php" method="POST">
                                                     <a class="btn btn-info btn-sm" href="index.php?url=product_detail&id=<?= $row ['id'] ?>">Detail</a>
-                                                    <a class="btn btn-warning btn-sm">Ubah</a>
-                                                    <a class="btn btn-danger btn-sm">Hapus</a>
+                                                    <a class="btn btn-warning btn-sm" href="index.php?url=product_form&idedit=<?= $row ['id'] ?>">Ubah</a>
+                                                    <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" onclick="return confirm('Yakin ingin Menghapusnya?')">Hapus</button>
 
                                                     <input type="hidden" name="idx" value="<?= $row['id']?>">
                                                 </form>
